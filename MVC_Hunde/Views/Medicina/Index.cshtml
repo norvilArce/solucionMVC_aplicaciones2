@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h3>LISTADO DE MEDICAMENTOS</h3>
+
+    <table cellpading="2" cellspacing="2" border="1" width="500">
+
+        <tr>
+
+            <th>Codigo</th>
+
+            <th>Nombre de la Medicina</th>
+
+        </tr>
+
+        @foreach (var medicina in ViewBag.ListarMedicinas)
+
+        {
+
+            <tr>
+
+                <th>@medicina.cod_med</th>
+
+                <th>@medicina.nombre_medicina</th>
+
+
+            </tr>
+
+        }
+
+    </table>
+
+</body>
+
+</html>

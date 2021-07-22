@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Hunde" />
+  <xs:import schemaLocation="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Hunde" />
   <xs:element name="ConsultasPorMascota">
     <xs:complexType>
       <xs:sequence>
@@ -230,6 +230,34 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="AgregarDetallesDeConsultaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerDetallesDeConsulta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoConsulta" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerDetallesDeConsultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WCF_Hunde" minOccurs="0" name="VerDetallesDeConsultaResult" nillable="true" type="q12:Consulta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerDetallesDeCita">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoCita" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerDetallesDeCitaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCF_Hunde" minOccurs="0" name="VerDetallesDeCitaResult" nillable="true" type="q13:Cita" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
