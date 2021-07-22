@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h3>LISTADO DE PROVEEDORES</h3>
+
+    <table cellpading="2" cellspacing="2" border="1" width="500">
+
+        <tr>
+
+            <th>Codigo</th>
+
+            <th>Nombre del Proveedor</th>
+
+            <th>Ruc del proveedor</th>
+
+            <th>Telefono del proveedor</th>
+
+            <th>Email del Proveedor</th>
+
+            <th>Estado del proveedor</th>
+
+
+        </tr>
+
+        @foreach (var proveedor in ViewBag.ListarProveedores)
+
+        {
+
+            <tr>
+
+                <th>@proveedor.cod_prov</th>
+
+                <th>@proveedor.rep_ven_prov</th>
+
+                <th>@proveedor.ruc_prov</th>
+
+                <th>@proveedor.tel_prov</th>
+
+                <th>@proveedor.email_prov</th>
+
+                <th>@proveedor.estado_prov</th>
+
+
+            </tr>
+
+        }
+
+
+
+    </table>
+
+</body>
+
+</html>
