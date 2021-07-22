@@ -127,8 +127,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ProxyEstado\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ProxyMedicina\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ProxyTratamiento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ConsultaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -145,6 +161,56 @@
     <None Include="Connected Services\ProxyConsulta\configuration91.svcinfo" />
     <None Include="Connected Services\ProxyConsulta\configuration.svcinfo" />
     <None Include="Connected Services\ProxyConsulta\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ProxyEstado\MVC_Hunde.ProxyEstado.Estado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ProxyEstado\WCF_Hunde.disco" />
+    <None Include="Connected Services\ProxyEstado\configuration91.svcinfo" />
+    <None Include="Connected Services\ProxyEstado\configuration.svcinfo" />
+    <None Include="Connected Services\ProxyEstado\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ProxyMedicina\MVC_Hunde.ProxyMedicina.Medicina.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ProxyMedicina\WCF_Hunde.disco" />
+    <None Include="Connected Services\ProxyMedicina\configuration91.svcinfo" />
+    <None Include="Connected Services\ProxyMedicina\configuration.svcinfo" />
+    <None Include="Connected Services\ProxyMedicina\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\ProxyTratamiento\MVC_Hunde.ProxyTratamiento.Tratamiento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ProxyEstado\ServicioEstado.wsdl" />
+    <None Include="Connected Services\ProxyEstado\WCF_Hunde.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyEstado\WCF_Hunde1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyEstado\WCF_Hunde2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyMedicina\ServicioMedicina.wsdl" />
+    <None Include="Connected Services\ProxyMedicina\WCF_Hunde.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyMedicina\WCF_Hunde1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyMedicina\WCF_Hunde2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyTratamiento\WCF_Hunde.disco" />
+    <None Include="Connected Services\ProxyTratamiento\configuration91.svcinfo" />
+    <None Include="Connected Services\ProxyTratamiento\configuration.svcinfo" />
+    <None Include="Connected Services\ProxyTratamiento\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -166,6 +232,16 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ProxyConsulta\WCF_Hunde2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyTratamiento\ServicioTratamiento.wsdl" />
+    <None Include="Connected Services\ProxyTratamiento\WCF_Hunde.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyTratamiento\WCF_Hunde1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyTratamiento\WCF_Hunde2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -194,6 +270,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Consulta\Index.cshtml" />
+    <Content Include="Views\Consulta\DetallesDeConsulta.cshtml" />
+    <Content Include="Views\Reservas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -217,6 +295,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ProxyConsulta\" />
+    <WCFMetadataStorage Include="Connected Services\ProxyEstado\" />
+    <WCFMetadataStorage Include="Connected Services\ProxyMedicina\" />
+    <WCFMetadataStorage Include="Connected Services\ProxyTratamiento\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

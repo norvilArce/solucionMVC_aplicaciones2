@@ -233,4 +233,32 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="VerDetallesDeConsulta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoConsulta" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerDetallesDeConsultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WCF_Hunde" minOccurs="0" name="VerDetallesDeConsultaResult" nillable="true" type="q12:Consulta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerDetallesDeCita">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoCita" type="xs:short" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerDetallesDeCitaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCF_Hunde" minOccurs="0" name="VerDetallesDeCitaResult" nillable="true" type="q13:Cita" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

@@ -103,6 +103,18 @@
   <wsdl:message name="IServicioConsulta_AgregarDetallesDeConsulta_OutputMessage">
     <wsdl:part name="parameters" element="tns:AgregarDetallesDeConsultaResponse" />
   </wsdl:message>
+  <wsdl:message name="IServicioConsulta_VerDetallesDeConsulta_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerDetallesDeConsulta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_VerDetallesDeConsulta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerDetallesDeConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_VerDetallesDeCita_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerDetallesDeCita" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_VerDetallesDeCita_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerDetallesDeCitaResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServicioConsulta">
     <wsdl:operation name="ConsultasPorMascota">
       <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMascota" message="tns:IServicioConsulta_ConsultasPorMascota_InputMessage" />
@@ -167,6 +179,14 @@
     <wsdl:operation name="AgregarDetallesDeConsulta">
       <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/AgregarDetallesDeConsulta" message="tns:IServicioConsulta_AgregarDetallesDeConsulta_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/AgregarDetallesDeConsultaResponse" message="tns:IServicioConsulta_AgregarDetallesDeConsulta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerDetallesDeConsulta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/VerDetallesDeConsulta" message="tns:IServicioConsulta_VerDetallesDeConsulta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/VerDetallesDeConsultaResponse" message="tns:IServicioConsulta_VerDetallesDeConsulta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerDetallesDeCita">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/VerDetallesDeCita" message="tns:IServicioConsulta_VerDetallesDeCita_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/VerDetallesDeCitaResponse" message="tns:IServicioConsulta_VerDetallesDeCita_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServicioConsulta" type="tns:IServicioConsulta">
@@ -308,6 +328,24 @@
     </wsdl:operation>
     <wsdl:operation name="AgregarDetallesDeConsulta">
       <soap:operation soapAction="http://tempuri.org/IServicioConsulta/AgregarDetallesDeConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerDetallesDeConsulta">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/VerDetallesDeConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerDetallesDeCita">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/VerDetallesDeCita" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

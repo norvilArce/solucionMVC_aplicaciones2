@@ -38,7 +38,13 @@ namespace MVC_Hunde.ProxyConsulta {
         private string cod_empField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private short cod_medicinaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string cod_pacField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private short cod_tratamientoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string color_pacField;
@@ -152,6 +158,19 @@ namespace MVC_Hunde.ProxyConsulta {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public short cod_medicina {
+            get {
+                return this.cod_medicinaField;
+            }
+            set {
+                if ((this.cod_medicinaField.Equals(value) != true)) {
+                    this.cod_medicinaField = value;
+                    this.RaisePropertyChanged("cod_medicina");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string cod_pac {
             get {
                 return this.cod_pacField;
@@ -160,6 +179,19 @@ namespace MVC_Hunde.ProxyConsulta {
                 if ((object.ReferenceEquals(this.cod_pacField, value) != true)) {
                     this.cod_pacField = value;
                     this.RaisePropertyChanged("cod_pac");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public short cod_tratamiento {
+            get {
+                return this.cod_tratamientoField;
+            }
+            set {
+                if ((this.cod_tratamientoField.Equals(value) != true)) {
+                    this.cod_tratamientoField = value;
+                    this.RaisePropertyChanged("cod_tratamiento");
                 }
             }
         }
@@ -554,6 +586,18 @@ namespace MVC_Hunde.ProxyConsulta {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioConsulta/AgregarDetallesDeConsulta", ReplyAction="http://tempuri.org/IServicioConsulta/AgregarDetallesDeConsultaResponse")]
         System.Threading.Tasks.Task<bool> AgregarDetallesDeConsultaAsync(short codigoConsulta, short codigoTratamiento, short codigoEstado, short codigoMedicina, string observaciones);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioConsulta/VerDetallesDeConsulta", ReplyAction="http://tempuri.org/IServicioConsulta/VerDetallesDeConsultaResponse")]
+        MVC_Hunde.ProxyConsulta.Consulta VerDetallesDeConsulta(short codigoConsulta);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioConsulta/VerDetallesDeConsulta", ReplyAction="http://tempuri.org/IServicioConsulta/VerDetallesDeConsultaResponse")]
+        System.Threading.Tasks.Task<MVC_Hunde.ProxyConsulta.Consulta> VerDetallesDeConsultaAsync(short codigoConsulta);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioConsulta/VerDetallesDeCita", ReplyAction="http://tempuri.org/IServicioConsulta/VerDetallesDeCitaResponse")]
+        MVC_Hunde.ProxyConsulta.Cita VerDetallesDeCita(short codigoCita);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioConsulta/VerDetallesDeCita", ReplyAction="http://tempuri.org/IServicioConsulta/VerDetallesDeCitaResponse")]
+        System.Threading.Tasks.Task<MVC_Hunde.ProxyConsulta.Cita> VerDetallesDeCitaAsync(short codigoCita);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -709,6 +753,22 @@ namespace MVC_Hunde.ProxyConsulta {
         
         public System.Threading.Tasks.Task<bool> AgregarDetallesDeConsultaAsync(short codigoConsulta, short codigoTratamiento, short codigoEstado, short codigoMedicina, string observaciones) {
             return base.Channel.AgregarDetallesDeConsultaAsync(codigoConsulta, codigoTratamiento, codigoEstado, codigoMedicina, observaciones);
+        }
+        
+        public MVC_Hunde.ProxyConsulta.Consulta VerDetallesDeConsulta(short codigoConsulta) {
+            return base.Channel.VerDetallesDeConsulta(codigoConsulta);
+        }
+        
+        public System.Threading.Tasks.Task<MVC_Hunde.ProxyConsulta.Consulta> VerDetallesDeConsultaAsync(short codigoConsulta) {
+            return base.Channel.VerDetallesDeConsultaAsync(codigoConsulta);
+        }
+        
+        public MVC_Hunde.ProxyConsulta.Cita VerDetallesDeCita(short codigoCita) {
+            return base.Channel.VerDetallesDeCita(codigoCita);
+        }
+        
+        public System.Threading.Tasks.Task<MVC_Hunde.ProxyConsulta.Cita> VerDetallesDeCitaAsync(short codigoCita) {
+            return base.Channel.VerDetallesDeCitaAsync(codigoCita);
         }
     }
 }

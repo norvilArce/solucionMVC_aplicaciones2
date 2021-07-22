@@ -14,7 +14,9 @@
       <xs:element minOccurs="0" name="cod_cli" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="cod_consulta" type="xs:short" />
       <xs:element minOccurs="0" name="cod_emp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cod_medicina" type="xs:short" />
       <xs:element minOccurs="0" name="cod_pac" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cod_tratamiento" type="xs:short" />
       <xs:element minOccurs="0" name="color_pac" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="conduta" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="est_nutricional" nillable="true" type="xs:string" />

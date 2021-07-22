@@ -2,7 +2,7 @@
 <html>
 <body>
     <h3>LISTADO DE CONSULTAS CON FILTRO - VETERINARIA HUNDE</h3>
-    @using (Html.BeginForm("Filtrar", "Consulta"))
+    @using (Html.BeginForm("Filtrar", "Reservas"))
     {
         <table cellpading="2" cellspacing="2" border="1" width="1100">
             <tr>
@@ -13,18 +13,14 @@
                     <input type="radio" name="condicion" value="Todas" checked="true" />
                     <span>Todas</span>
                 </td>
-                <td>
+                @*<td>
                     <input type="radio" name="condicion" value="PorMascota" />
                     <span>Por Mascota</span>
                 </td>
                 <td>
                     <input type="radio" name="condicion" value="PorFecha" />
                     <span>Por Fecha</span>
-                </td>
-                <td>
-                    <input type="radio" name="condicion" value="PorMedico" />
-                    <span>Por Medico</span>
-                </td>
+                </td>*@
                 <td>
                     <input type="radio" name="condicion" value="PorEstado" />
                     <span>Por Estado</span>
@@ -32,17 +28,17 @@
 
             </tr>
             <tr>
-                <td>
+                @*<td>
                     <input type="text" name="criterio" />
-                </td>
+                </td>*@
                 <td>
                     @Html.DropDownList("cboEstado", (IEnumerable<SelectListItem>)ViewBag.estados)
                 </td>
                 <td>
                     <input type="submit" name="Buscar" />
                 </td>
-                <td></td>
-                <td></td>
+                @*<td></td>
+                <td></td>*@
             </tr>
         </table>
     }
@@ -53,29 +49,23 @@
     <table cellpading="2" cellspacing="2" border="1" width="1100">
         <tr>
             <th>Codigo</th>
-            <th>Fecha</th>
-            <th>Hora</th>
-            <th>Mascota</th>
-            <th>Medico</th>
-            <th>Cliente</th>
+            <th>Fecha Reserva</th>
+            <th>Fecha Solicitada</th>
+            <th>Hora Solicitada</th>
             <th>Estado</th>
-            @*<th>Detalles</th>*@
+            <th>Cod. Cliente</th>
 
         </tr>
-        
-        @foreach (var cons in ViewBag.listarConsultas)
+
+        @foreach (var cons in ViewBag.listarCitas)
         {
             <tr>
-                <th>@cons.cod_consulta</th>
-                <th>@cons.fec_consulta</th>
-                <th>@cons.hora_consulta</th>
-                <th>@cons.nom_pac</th>
-                <th>@cons.nom_emp</th>
-                <th>@cons.nom_cli</th>
-                <th>@cons.estado</th>
-                @*<th>
-                    @Html.ActionLink("Detalles", "DetallesDeConsulta", new { codigo = cons.cod_consulta })
-                </th>*@
+                <th>@cons.cod_cita</th>
+                <th>@cons.fec_reserva</th>
+                <th>@cons.fec_cita</th>
+                <th>@cons.hor_cita</th>
+                <th>@cons.est_cita</th>
+                <th>@cons.cod_cli</th>
             </tr>
         }
     </table>
