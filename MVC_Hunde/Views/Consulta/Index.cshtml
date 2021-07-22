@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <h3>LISTADO DE CONSULTAS CON FILTRO - VETERINARIA HUNDE</h3>
+    @using (Html.BeginForm("Filtrar", "Consulta"))
+    {
+        <table cellpading="2" cellspacing="2" border="1" width="1100">
+            <tr>
+                <th>Seleccione tipo de criterio</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="condicion" value="Todas" checked="true" />
+                    <span>Todas</span>
+                </td>
+                <td>
+                    <input type="radio" name="condicion" value="PorMascota" />
+                    <span>Por Mascota</span>
+                </td>
+                <td>
+                    <input type="radio" name="condicion" value="PorFecha" />
+                    <span>Por Fecha</span>
+                </td>
+                <td>
+                    <input type="radio" name="condicion" value="PorMedico" />
+                    <span>Por Medico</span>
+                </td>
+                <td>
+                    <input type="radio" name="condicion" value="PorEstado" />
+                    <span>Por Estado</span>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="criterio" />
+                </td>
+                <td>
+                    @Html.DropDownList("cboEstado", (IEnumerable<SelectListItem>)ViewBag.estados)
+                </td>
+                <td>
+                    <input type="submit" name="Buscar" />
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    }
+    <br />
+    <br />
+
+
+    <table cellpading="2" cellspacing="2" border="1" width="1100">
+        <tr>
+            <th>Codigo</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Mascota</th>
+            <th>Medico</th>
+            <th>Cliente</th>
+            <th>Estado</th>
+
+        </tr>
+        @*TODO agregar metodo al servicio *@
+        @foreach (var cons in ViewBag.listarConsultas)
+        {
+            <tr>
+                <th>@cons.cod_consulta</th>
+                <th>@cons.fec_consulta.subString(0,10)</th>
+                <th>@cons.hora_consulta</th>
+                <th>@cons.nom_pac</th>
+                <th>@cons.nom_emp</th>
+                <th>@cons.nom_cli</th>
+                <th>@cons.estado</th>
+            </tr>
+        }
+    </table>
+</body>
+</html>
