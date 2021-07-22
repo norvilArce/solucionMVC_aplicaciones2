@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="38d664fc-4d8f-4fd2-bef4-4ea1aa71da08" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
-=======
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="107e81c2-1ffa-4c95-be2c-1e83ab856f17" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d718ea5a-6db6-4e53-8509-ee10a8b018ac" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -23,25 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-<<<<<<< HEAD
     <MetadataSource Address="http://NORVIL/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WCF_Hunde.xsd" MetadataType="Schema" ID="9e49d51a-285d-4fcb-ae71-21ed4ff7805f" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServicioMedicina.wsdl" MetadataType="Wsdl" ID="2f9e0fa4-c420-4305-b058-cb310e3704cc" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?wsdl" />
-    <MetadataFile FileName="WCF_Hunde.disco" MetadataType="Disco" ID="29a77587-ddb3-4102-ac82-0c5d53988742" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?disco" />
-    <MetadataFile FileName="WCF_Hunde1.xsd" MetadataType="Schema" ID="f6c30cde-e35b-49cc-b227-a570bc5f881c" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd0" />
-    <MetadataFile FileName="WCF_Hunde2.xsd" MetadataType="Schema" ID="fbc7eaae-cde0-48f7-967b-5de892cf25af" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd2" />
-=======
-    <MetadataSource Address="http://DESKTOP-0C6FICR/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc" Protocol="http" SourceId="1" />
-  </MetadataSources>
-  <Metadata>
-    <MetadataFile FileName="ServicioMedicina.wsdl" MetadataType="Wsdl" ID="66e7e77f-8e82-467f-9394-fab51317525f" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?wsdl" />
-    <MetadataFile FileName="WCF_Hunde.xsd" MetadataType="Schema" ID="39d497b7-4129-44ac-b9b4-f6629644510d" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd2" />
-    <MetadataFile FileName="WCF_Hunde1.xsd" MetadataType="Schema" ID="dbd2a31c-b787-48c9-9d98-471b560230db" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd1" />
-    <MetadataFile FileName="WCF_Hunde.disco" MetadataType="Disco" ID="48689b01-a4ab-4029-a843-f49e768dbc68" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?disco" />
-    <MetadataFile FileName="WCF_Hunde2.xsd" MetadataType="Schema" ID="dc0daed8-8e5f-4fb6-b69d-fc75c8302bb1" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd0" />
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
+    <MetadataFile FileName="WCF_Hunde.xsd" MetadataType="Schema" ID="cf10700c-5ae1-45e1-8c6e-bd71e40af9ee" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioMedicina.wsdl" MetadataType="Wsdl" ID="f5ae6986-675c-44a8-8ccf-6a615d1e6e47" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?wsdl" />
+    <MetadataFile FileName="WCF_Hunde.disco" MetadataType="Disco" ID="ba3f89c8-6b92-49a4-9e43-aa45a5717fe9" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?disco" />
+    <MetadataFile FileName="WCF_Hunde1.xsd" MetadataType="Schema" ID="6462a975-b46b-4190-908d-b2acbda2bbe0" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCF_Hunde2.xsd" MetadataType="Schema" ID="487cd782-ba7d-466c-8acc-8fed08b42227" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

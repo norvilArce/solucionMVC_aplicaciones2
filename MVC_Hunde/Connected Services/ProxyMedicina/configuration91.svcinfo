@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="oZ2Xp5ikkc1OLYcW1ql/gGu0qu6peSeS4PssxH0c7+I=">
-=======
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="Lhxbhy8EtaropUItzaCYCvI69ESYTWrwqPhrkB+bvvw=">
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServicioMedicina">
       <properties>
@@ -116,17 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-<<<<<<< HEAD
     <endpoint name="BasicHttpBinding_IServicioMedicina" contract="ProxyMedicina.IServicioMedicina" bindingType="basicHttpBinding" address="http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc" bindingConfiguration="BasicHttpBinding_IServicioMedicina">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://norvil/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc</serializedValue>
-=======
-    <endpoint name="BasicHttpBinding_IServicioMedicina" contract="ProxyMedicina.IServicioMedicina" bindingType="basicHttpBinding" address="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc" bindingConfiguration="BasicHttpBinding_IServicioMedicina">
-      <properties>
-        <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioMedicina.svc</serializedValue>
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

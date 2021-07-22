@@ -14,6 +14,8 @@
 
             <th>Nombre de la Medicina</th>
 
+            <th>Precio (S/.)</th>
+
         </tr>
 
         @foreach (var medicina in ViewBag.ListarMedicinas)
@@ -25,6 +27,8 @@
                 <th>@medicina.cod_med</th>
 
                 <th>@medicina.nombre_medicina</th>
+
+                <th>@medicina.precio</th>
 
 
             </tr>

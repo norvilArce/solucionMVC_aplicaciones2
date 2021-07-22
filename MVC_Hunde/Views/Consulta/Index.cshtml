@@ -62,7 +62,7 @@
             @*<th>Detalles</th>*@
 
         </tr>
-        
+
         @foreach (var cons in ViewBag.listarConsultas)
         {
             <tr>
@@ -74,8 +74,8 @@
                 <th>@cons.nom_cli</th>
                 <th>@cons.estado</th>
                 @*<th>
-                    @Html.ActionLink("Detalles", "DetallesDeConsulta", new { codigo = cons.cod_consulta })
-                </th>*@
+                        @Html.ActionLink("Detalles", "DetallesDeConsulta", new { codigo = cons.cod_consulta })
+                    </th>*@
             </tr>
         }
     </table>

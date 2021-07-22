@@ -54,7 +54,7 @@ namespace MVC_Hunde.Controllers
         // GET: Consulta
         public ActionResult Index()
         {
-               
+
             List<Consulta> consultas = new List<Consulta>();
             consultas = servicioConsulta.ListarConsultas().ToList();
 

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7144491D-0101-4229-82D2-3E17B4BEACD3}</ProjectGuid>
+    <ProjectGuid>{E64F462E-6C64-47F8-BF12-D9DE2742B771}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -18,13 +17,11 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44334</IISExpressSSLPort>
+    <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -127,20 +124,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Connected Services\ProxyEstado\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-=======
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
     <Compile Include="Connected Services\ProxyMedicina\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Connected Services\ProxyTratamiento\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -148,31 +141,27 @@
     </Compile>
     <Compile Include="Controllers\ConsultaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ReservasController.cs" />
-=======
-    <Compile Include="Controllers\ConsultaController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MedicinaController.cs" />
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
+    <Compile Include="Controllers\ReservasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Connected Services\ProxyConsulta\MVC_Hunde.ProxyConsulta.Cita.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <Content Include="Connected Services\ProxyConsulta\MVC_Hunde.ProxyConsulta.Consulta.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\ProxyConsulta\WCF_Hunde.disco" />
     <None Include="Connected Services\ProxyConsulta\configuration91.svcinfo" />
     <None Include="Connected Services\ProxyConsulta\configuration.svcinfo" />
-    <Content Include="Connected Services\ProxyConsulta\MVC_Hunde.ProxyConsulta.Cita1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <None Include="Connected Services\ProxyConsulta\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-<<<<<<< HEAD
     <Content Include="Connected Services\ProxyEstado\MVC_Hunde.ProxyEstado.Estado.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -183,10 +172,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-=======
-    <None Include="Connected Services\ProxyConsulta\ServicioConsulta1.wsdl" />
-    <None Include="Connected Services\ProxyConsulta\WCF_Hunde1.disco" />
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
     <Content Include="Connected Services\ProxyMedicina\MVC_Hunde.ProxyMedicina.Medicina.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -197,30 +182,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-<<<<<<< HEAD
     <Content Include="Connected Services\ProxyTratamiento\MVC_Hunde.ProxyTratamiento.Tratamiento.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\ProxyEstado\ServicioEstado.wsdl" />
-    <None Include="Connected Services\ProxyEstado\WCF_Hunde.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ProxyEstado\WCF_Hunde1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ProxyEstado\WCF_Hunde2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ProxyMedicina\ServicioMedicina.wsdl" />
-    <None Include="Connected Services\ProxyMedicina\WCF_Hunde.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ProxyMedicina\WCF_Hunde1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ProxyMedicina\WCF_Hunde2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\ProxyTratamiento\WCF_Hunde.disco" />
     <None Include="Connected Services\ProxyTratamiento\configuration91.svcinfo" />
     <None Include="Connected Services\ProxyTratamiento\configuration.svcinfo" />
@@ -228,8 +192,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-=======
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -240,13 +202,24 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Connected Services\ProxyConsulta\WCF_Hunde3.xsd">
+    <None Include="Connected Services\ProxyConsulta\ServicioConsulta.wsdl" />
+    <None Include="Connected Services\ProxyConsulta\WCF_Hunde.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ProxyConsulta\WCF_Hunde31.xsd">
+    <None Include="Connected Services\ProxyConsulta\WCF_Hunde1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ProxyConsulta\WCF_Hunde32.xsd">
+    <None Include="Connected Services\ProxyConsulta\WCF_Hunde2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyEstado\ServicioEstado.wsdl" />
+    <None Include="Connected Services\ProxyEstado\WCF_Hunde.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyEstado\WCF_Hunde1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyEstado\WCF_Hunde2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ProxyMedicina\ServicioMedicina.wsdl" />
@@ -295,12 +268,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Consulta\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Consulta\DetallesDeConsulta.cshtml" />
     <Content Include="Views\Reservas\Index.cshtml" />
-=======
     <Content Include="Views\Medicina\Index.cshtml" />
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -324,13 +294,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ProxyConsulta\" />
-<<<<<<< HEAD
     <WCFMetadataStorage Include="Connected Services\ProxyEstado\" />
     <WCFMetadataStorage Include="Connected Services\ProxyMedicina\" />
     <WCFMetadataStorage Include="Connected Services\ProxyTratamiento\" />
-=======
-    <WCFMetadataStorage Include="Connected Services\ProxyMedicina\" />
->>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -348,9 +314,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>55084</DevelopmentServerPort>
+          <DevelopmentServerPort>58989</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44334/</IISUrl>
+          <IISUrl>http://localhost:58989/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -360,12 +326,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

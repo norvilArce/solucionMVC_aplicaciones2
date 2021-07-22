@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="37e90675-8558-4c9b-aa17-fbe191f39161" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e5b61d94-925e-41f5-9f39-d33123bf60c4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://NORVIL/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WCF_Hunde.xsd" MetadataType="Schema" ID="3434891d-1823-4067-b423-55e3f7f9017e" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServicioTratamiento.wsdl" MetadataType="Wsdl" ID="eb6b6e0d-a4ac-4ce9-8f67-84499a271056" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?wsdl" />
-    <MetadataFile FileName="WCF_Hunde1.xsd" MetadataType="Schema" ID="4b664fe5-9341-4a3b-91e0-8b61fb9a8f8f" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?xsd=xsd2" />
-    <MetadataFile FileName="WCF_Hunde2.xsd" MetadataType="Schema" ID="85895430-ebbd-4d48-bb2b-99f195870e1a" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?xsd=xsd1" />
-    <MetadataFile FileName="WCF_Hunde.disco" MetadataType="Disco" ID="53947ce4-98e5-4432-a3e3-2d7c2020dcf0" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?disco" />
+    <MetadataFile FileName="WCF_Hunde.xsd" MetadataType="Schema" ID="b727820d-0815-4488-8614-56f33acc4c97" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioTratamiento.wsdl" MetadataType="Wsdl" ID="5ab9fd53-879d-4dd6-bfb5-1b5dcfa8d8f5" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?wsdl" />
+    <MetadataFile FileName="WCF_Hunde1.xsd" MetadataType="Schema" ID="f60c8a6e-e0ca-4f01-818d-3f62384fa35b" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCF_Hunde2.xsd" MetadataType="Schema" ID="43f267c5-f545-4a11-a2e6-4640f4bd33f5" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCF_Hunde.disco" MetadataType="Disco" ID="494a5d80-e9f9-4396-91f2-328be78e75c2" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioTratamiento.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

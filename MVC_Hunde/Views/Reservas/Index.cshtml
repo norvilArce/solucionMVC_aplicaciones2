@@ -14,13 +14,13 @@
                     <span>Todas</span>
                 </td>
                 @*<td>
-                    <input type="radio" name="condicion" value="PorMascota" />
-                    <span>Por Mascota</span>
-                </td>
-                <td>
-                    <input type="radio" name="condicion" value="PorFecha" />
-                    <span>Por Fecha</span>
-                </td>*@
+                        <input type="radio" name="condicion" value="PorMascota" />
+                        <span>Por Mascota</span>
+                    </td>
+                    <td>
+                        <input type="radio" name="condicion" value="PorFecha" />
+                        <span>Por Fecha</span>
+                    </td>*@
                 <td>
                     <input type="radio" name="condicion" value="PorEstado" />
                     <span>Por Estado</span>
@@ -29,8 +29,8 @@
             </tr>
             <tr>
                 @*<td>
-                    <input type="text" name="criterio" />
-                </td>*@
+                        <input type="text" name="criterio" />
+                    </td>*@
                 <td>
                     @Html.DropDownList("cboEstado", (IEnumerable<SelectListItem>)ViewBag.estados)
                 </td>
@@ -38,7 +38,7 @@
                     <input type="submit" name="Buscar" />
                 </td>
                 @*<td></td>
-                <td></td>*@
+                    <td></td>*@
             </tr>
         </table>
     }

@@ -9,13 +9,12 @@ namespace MVC_Hunde.Controllers
 {
     public class MedicinaController : Controller
     {
-
         ServicioMedicinaClient servicioMedicina = new ServicioMedicinaClient();
+        // GET: Medicina
         public ActionResult Index()
         {
             ViewBag.ListarMedicinas = servicioMedicina.ListarMedicinas();
             return View();
         }
-
     }
 }

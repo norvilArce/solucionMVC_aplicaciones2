@@ -1,0 +1,13 @@
+[bB]in 
+[oO]bj 
+*.pdb 
+*.exe 
+*.json 
+.vs
+
+.WCF_Hunde/obj/*
+.WCF_Hunde/bin/*
+.Web_Hunde/obj/*
+.Web_Hunde/bin/*
+.Win_Hunde/obj/*
+.Win_Hunde/bin/*

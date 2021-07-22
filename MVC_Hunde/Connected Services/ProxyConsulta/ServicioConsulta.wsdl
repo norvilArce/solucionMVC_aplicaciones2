@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioConsulta" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Hunde" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioConsulta_ConsultasPorMascota_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorMascota" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorMascota_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorMascotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorMedico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorMedico" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorMedico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorFecha_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorFecha" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorFecha_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorEstado" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ListarConsultas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarConsultas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ListarConsultas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarConsultasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ListarCitas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCitas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ListarCitas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCitasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_CitasPorEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:CitasPorEstado" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_CitasPorEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CitasPorEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasEntreFechas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasEntreFechas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasEntreFechas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasEntreFechasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorMascotaEntreFechas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorMascotaEntreFechas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorMascotaEntreFechas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorMascotaEntreFechasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorMedicoEntreFechas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorMedicoEntreFechas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ConsultasPorMedicoEntreFechas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultasPorMedicoEntreFechasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ReservarCita_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReservarCita" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ReservarCita_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReservarCitaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ActualizarReserva_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarReserva" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_ActualizarReserva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_CancelarReserva_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarReserva" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_CancelarReserva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_GenerarConsulta_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarConsulta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_GenerarConsulta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_CancelarConsulta_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarConsulta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_CancelarConsulta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_AgregarDetallesDeConsulta_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarDetallesDeConsulta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_AgregarDetallesDeConsulta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarDetallesDeConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_VerDetallesDeConsulta_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerDetallesDeConsulta" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_VerDetallesDeConsulta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerDetallesDeConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_VerDetallesDeCita_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerDetallesDeCita" />
+  </wsdl:message>
+  <wsdl:message name="IServicioConsulta_VerDetallesDeCita_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerDetallesDeCitaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioConsulta">
+    <wsdl:operation name="ConsultasPorMascota">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMascota" message="tns:IServicioConsulta_ConsultasPorMascota_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMascotaResponse" message="tns:IServicioConsulta_ConsultasPorMascota_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorMedico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMedico" message="tns:IServicioConsulta_ConsultasPorMedico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMedicoResponse" message="tns:IServicioConsulta_ConsultasPorMedico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorFecha">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorFecha" message="tns:IServicioConsulta_ConsultasPorFecha_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorFechaResponse" message="tns:IServicioConsulta_ConsultasPorFecha_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorEstado" message="tns:IServicioConsulta_ConsultasPorEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorEstadoResponse" message="tns:IServicioConsulta_ConsultasPorEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarConsultas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ListarConsultas" message="tns:IServicioConsulta_ListarConsultas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ListarConsultasResponse" message="tns:IServicioConsulta_ListarConsultas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCitas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ListarCitas" message="tns:IServicioConsulta_ListarCitas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ListarCitasResponse" message="tns:IServicioConsulta_ListarCitas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CitasPorEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/CitasPorEstado" message="tns:IServicioConsulta_CitasPorEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/CitasPorEstadoResponse" message="tns:IServicioConsulta_CitasPorEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasEntreFechas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasEntreFechas" message="tns:IServicioConsulta_ConsultasEntreFechas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasEntreFechasResponse" message="tns:IServicioConsulta_ConsultasEntreFechas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorMascotaEntreFechas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMascotaEntreFechas" message="tns:IServicioConsulta_ConsultasPorMascotaEntreFechas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMascotaEntreFechasResponse" message="tns:IServicioConsulta_ConsultasPorMascotaEntreFechas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorMedicoEntreFechas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMedicoEntreFechas" message="tns:IServicioConsulta_ConsultasPorMedicoEntreFechas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ConsultasPorMedicoEntreFechasResponse" message="tns:IServicioConsulta_ConsultasPorMedicoEntreFechas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReservarCita">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ReservarCita" message="tns:IServicioConsulta_ReservarCita_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ReservarCitaResponse" message="tns:IServicioConsulta_ReservarCita_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarReserva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/ActualizarReserva" message="tns:IServicioConsulta_ActualizarReserva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/ActualizarReservaResponse" message="tns:IServicioConsulta_ActualizarReserva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelarReserva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/CancelarReserva" message="tns:IServicioConsulta_CancelarReserva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/CancelarReservaResponse" message="tns:IServicioConsulta_CancelarReserva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarConsulta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/GenerarConsulta" message="tns:IServicioConsulta_GenerarConsulta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/GenerarConsultaResponse" message="tns:IServicioConsulta_GenerarConsulta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelarConsulta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/CancelarConsulta" message="tns:IServicioConsulta_CancelarConsulta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/CancelarConsultaResponse" message="tns:IServicioConsulta_CancelarConsulta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDetallesDeConsulta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/AgregarDetallesDeConsulta" message="tns:IServicioConsulta_AgregarDetallesDeConsulta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/AgregarDetallesDeConsultaResponse" message="tns:IServicioConsulta_AgregarDetallesDeConsulta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerDetallesDeConsulta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/VerDetallesDeConsulta" message="tns:IServicioConsulta_VerDetallesDeConsulta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/VerDetallesDeConsultaResponse" message="tns:IServicioConsulta_VerDetallesDeConsulta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerDetallesDeCita">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioConsulta/VerDetallesDeCita" message="tns:IServicioConsulta_VerDetallesDeCita_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioConsulta/VerDetallesDeCitaResponse" message="tns:IServicioConsulta_VerDetallesDeCita_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioConsulta" type="tns:IServicioConsulta">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultasPorMascota">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ConsultasPorMascota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorMedico">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ConsultasPorMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorFecha">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ConsultasPorFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorEstado">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ConsultasPorEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarConsultas">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ListarConsultas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCitas">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ListarCitas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CitasPorEstado">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/CitasPorEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasEntreFechas">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ConsultasEntreFechas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorMascotaEntreFechas">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ConsultasPorMascotaEntreFechas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultasPorMedicoEntreFechas">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ConsultasPorMedicoEntreFechas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReservarCita">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ReservarCita" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarReserva">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/ActualizarReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarReserva">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/CancelarReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerarConsulta">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/GenerarConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarConsulta">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/CancelarConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDetallesDeConsulta">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/AgregarDetallesDeConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerDetallesDeConsulta">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/VerDetallesDeConsulta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerDetallesDeCita">
+      <soap:operation soapAction="http://tempuri.org/IServicioConsulta/VerDetallesDeCita" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioConsulta">
+    <wsdl:port name="BasicHttpBinding_IServicioConsulta" binding="tns:BasicHttpBinding_IServicioConsulta">
+      <soap:address location="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
