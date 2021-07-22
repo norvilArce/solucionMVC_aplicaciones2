@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Hunde" />
+  <xs:import schemaLocation="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Hunde" />
   <xs:element name="ConsultasPorMascota">
     <xs:complexType>
       <xs:sequence>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WCF_Hunde" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF_Hunde" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:complexType name="ArrayOfConsulta">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Consulta" nillable="true" type="tns:Consulta" />

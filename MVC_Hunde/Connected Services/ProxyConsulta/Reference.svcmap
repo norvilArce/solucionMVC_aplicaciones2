@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://NORVIL/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicioConsulta.wsdl" MetadataType="Wsdl" ID="861bc8c1-7ef8-4d6e-b48e-3bdc7e0fdab3" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?wsdl" />
-    <MetadataFile FileName="WCF_Hunde.xsd" MetadataType="Schema" ID="0b6137e9-c839-4eca-85a3-cd2b6c21a190" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd1" />
-    <MetadataFile FileName="WCF_Hunde1.xsd" MetadataType="Schema" ID="402b1a2c-b6ac-47f4-b96e-7fad2955a741" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd0" />
-    <MetadataFile FileName="WCF_Hunde.disco" MetadataType="Disco" ID="87f3b243-ce9a-4750-ac2b-3ec7882f18c9" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?disco" />
-    <MetadataFile FileName="WCF_Hunde2.xsd" MetadataType="Schema" ID="18874879-a060-44b7-9dd2-c7255411f283" SourceId="1" SourceUrl="http://norvil/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCF_Hunde3.xsd" MetadataType="Schema" ID="fed399da-cf26-47ff-b815-2cd42ebf6d02" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCF_Hunde31.xsd" MetadataType="Schema" ID="c6b1e1eb-e3c9-4dc2-984b-485377f15dfa" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCF_Hunde32.xsd" MetadataType="Schema" ID="57c973ce-25a0-4b2c-a374-34ec882a5db9" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCF_Hunde1.disco" MetadataType="Disco" ID="ea3151a7-ad14-4c7c-94fa-0cbdd623e31e" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?disco" />
+    <MetadataFile FileName="ServicioConsulta1.wsdl" MetadataType="Wsdl" ID="a0a6cb4d-c826-4281-8fe8-dd0806b5ec88" SourceId="1" SourceUrl="http://desktop-0c6ficr/WCF_Hunde/WCF_Hunde.ServicioConsulta.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

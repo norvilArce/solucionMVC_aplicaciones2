@@ -127,16 +127,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Connected Services\ProxyEstado\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+=======
+>>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
     <Compile Include="Connected Services\ProxyMedicina\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Connected Services\ProxyTratamiento\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -145,25 +149,30 @@
     <Compile Include="Controllers\ConsultaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ReservasController.cs" />
+=======
+    <Compile Include="Controllers\ConsultaController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MedicinaController.cs" />
+>>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Connected Services\ProxyConsulta\MVC_Hunde.ProxyConsulta.Cita.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <Content Include="Connected Services\ProxyConsulta\MVC_Hunde.ProxyConsulta.Consulta.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\ProxyConsulta\WCF_Hunde.disco" />
     <None Include="Connected Services\ProxyConsulta\configuration91.svcinfo" />
     <None Include="Connected Services\ProxyConsulta\configuration.svcinfo" />
+    <Content Include="Connected Services\ProxyConsulta\MVC_Hunde.ProxyConsulta.Cita1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ProxyConsulta\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+<<<<<<< HEAD
     <Content Include="Connected Services\ProxyEstado\MVC_Hunde.ProxyEstado.Estado.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -174,6 +183,10 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+=======
+    <None Include="Connected Services\ProxyConsulta\ServicioConsulta1.wsdl" />
+    <None Include="Connected Services\ProxyConsulta\WCF_Hunde1.disco" />
+>>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
     <Content Include="Connected Services\ProxyMedicina\MVC_Hunde.ProxyMedicina.Medicina.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -184,6 +197,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+<<<<<<< HEAD
     <Content Include="Connected Services\ProxyTratamiento\MVC_Hunde.ProxyTratamiento.Tratamiento.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -214,6 +228,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+=======
+>>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -224,14 +240,23 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Connected Services\ProxyConsulta\ServicioConsulta.wsdl" />
-    <None Include="Connected Services\ProxyConsulta\WCF_Hunde.xsd">
+    <None Include="Connected Services\ProxyConsulta\WCF_Hunde3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ProxyConsulta\WCF_Hunde1.xsd">
+    <None Include="Connected Services\ProxyConsulta\WCF_Hunde31.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ProxyConsulta\WCF_Hunde2.xsd">
+    <None Include="Connected Services\ProxyConsulta\WCF_Hunde32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyMedicina\ServicioMedicina.wsdl" />
+    <None Include="Connected Services\ProxyMedicina\WCF_Hunde.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyMedicina\WCF_Hunde1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyMedicina\WCF_Hunde2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ProxyTratamiento\ServicioTratamiento.wsdl" />
@@ -270,8 +295,12 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Consulta\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Consulta\DetallesDeConsulta.cshtml" />
     <Content Include="Views\Reservas\Index.cshtml" />
+=======
+    <Content Include="Views\Medicina\Index.cshtml" />
+>>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -295,9 +324,13 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ProxyConsulta\" />
+<<<<<<< HEAD
     <WCFMetadataStorage Include="Connected Services\ProxyEstado\" />
     <WCFMetadataStorage Include="Connected Services\ProxyMedicina\" />
     <WCFMetadataStorage Include="Connected Services\ProxyTratamiento\" />
+=======
+    <WCFMetadataStorage Include="Connected Services\ProxyMedicina\" />
+>>>>>>> 840ef9c1e1f97928cd16ce158b90f9951a6abc29
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
