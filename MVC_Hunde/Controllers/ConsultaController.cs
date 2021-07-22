@@ -42,22 +42,22 @@ namespace MVC_Hunde.Controllers
             switch (condicion)
             {
                 case "PorMascota":
-                    ViewBag.ListarPapeleta = servicioConsulta.ConsultasPorMascota(criterio);
+                    ViewBag.listarConsultas = servicioConsulta.ConsultasPorMascota(criterio);
                     break;
                 case "PorFecha":
-                    ViewBag.ListarPapeleta = servicioConsulta.ConsultasPorFecha(Convert.ToDateTime(criterio));
+                    ViewBag.listarConsultas = servicioConsulta.ConsultasPorFecha(Convert.ToDateTime(criterio));
                     break;
                 case "PorMedico":
-                    ViewBag.ListarPapeleta = servicioConsulta.ConsultasPorMedico(criterioEstado);
+                    ViewBag.listarConsultas = servicioConsulta.ConsultasPorMedico(criterio);
                     break;
                 case "PorEstado":
-                    ViewBag.ListarPapeleta = servicioConsulta.ConsultasPorEstado(Convert.ToInt16(criterioEstado));
+                    ViewBag.listarConsultas = servicioConsulta.ConsultasPorEstado(Convert.ToInt16(criterioEstado));
                     break;
                 default:
-                    ViewBag.ListarPapeleta = servicioConsulta.ListarConsultas();
+                    ViewBag.listarConsultas = servicioConsulta.ListarConsultas();
                     break;
             }
-            ViewBag.MisEstados = obtenerEstados();
+            ViewBag.estados = obtenerEstados();
             return View("Index");
         }
 

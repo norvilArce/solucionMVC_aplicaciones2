@@ -61,12 +61,12 @@
             <th>Estado</th>
 
         </tr>
-        @*TODO agregar metodo al servicio *@
+        
         @foreach (var cons in ViewBag.listarConsultas)
         {
             <tr>
                 <th>@cons.cod_consulta</th>
-                <th>@cons.fec_consulta.subString(0,10)</th>
+                <th>@cons.fec_consulta</th>
                 <th>@cons.hora_consulta</th>
                 <th>@cons.nom_pac</th>
                 <th>@cons.nom_emp</th>
